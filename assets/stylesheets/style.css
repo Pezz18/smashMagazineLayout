@@ -1,0 +1,343 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'Arimo', sans-serif;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+
+/*
+  ========================================
+  Top Navigation Bar
+  ========================================
+*/
+
+.top-nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: red;
+	height: 80px;
+	text-align: left;
+	line-height: 80px;
+}
+
+.top-nav * {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.top-nav p {
+	width: 20%;
+	background: yellow;
+	margin: 0 40px 0 10px;	
+}
+
+.top-nav li {
+	display: inline-block;
+	background-color: lightgray;
+	width: 6em;
+	margin-right: -4px;
+	border-right: 1px solid black;
+	line-height: 65px;
+}
+
+
+
+/*
+  ========================================
+  Grid Set Up
+  ========================================
+*/
+
+.grid {
+	margin-top: 80px;
+	width: 100%;
+	background: orange;
+	text-align: center;
+}
+
+
+[class*="col-"] {
+	
+	float: left;
+}
+
+.col-2-10 {
+	width: 20%;
+	background: pink;
+
+}
+
+.col-5-10 {
+	width: 50%;
+	background: lightblue;
+	
+	-webkit-border-top-right-radius: 50px;
+	-webkit-border-bottom-right-radius: 50px;
+	-moz-border-radius-topright: 50px;
+	-moz-border-radius-bottomright: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+.col-3-10 {
+	width: 30%;
+	background: lightgreen;
+}
+
+.col-10-10 {
+	width: 100%;
+}
+
+.grid:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/*
+  ========================================
+  Side Nav - Links
+  ========================================
+*/
+
+[class*="side-box-"] {
+	margin: 30px 0 0 10px;
+	padding-left: 70px;
+	text-align: left;
+	border-left: 10px solid black;
+	line-height: 35px;
+	height: 200px;
+}
+
+
+[class*="side-box-"] h4 {
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+/*
+  ========================================
+  Main Content
+  ========================================
+*/
+
+.article * {
+	padding-bottom: 15px;
+}
+.article {
+	text-align: left;	
+	margin: 30px 30px 0 20px;
+
+	border-bottom: 5px solid blue;
+}
+
+.article h1 {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.article h2 {
+	color: blue;
+	font-size: 22px;
+	border-bottom: 1px solid black;
+}
+
+.article h5 {
+	display: inline-block;
+	margin-right: 100px;
+	color: red;
+	font-size: 18px;
+	padding-top: 15px;
+}
+
+.article .intro-p {
+	font-family: 'PT Serif', serif;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.article img {
+	width: 100%;
+	height: 200px;
+	margin-bottom: 15px;
+	padding-bottom: 0;
+	border: 1px solid green;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 200px;
+	font-size: 30px;
+	background: rgb(249,249,249); /* Old browsers */
+	background: -moz-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(0,0,0,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%); /* ie10+ */
+	background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 ); /* ie6-9 */
+}
+
+.article .closing-p {
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.article button {
+	width: 120px;
+	height: 40px;
+	padding: 0;
+	background-color: blue;
+	color: white;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+
+.next-page li {
+	display: inline-block;
+	margin: 10px;
+}
+
+.next-page button {
+	
+	padding: 0;
+	background-color: blue;
+	width: 60px;
+	height: 35px;
+	color: white;
+}
+
+/*
+  ========================================
+  Right Hand Adverts / Links
+  ========================================
+*/
+
+.search-box {
+	height: 30px;
+	width: 75%;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	box-shadow: 0;
+	border: 1px solid black;
+	}
+
+.search-btn {
+	width: 20%;
+	height: 34px;
+	vertical-align: middle;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 0;
+	margin-left: -6px;
+	background-color: red;
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+	border: 1px solid black;
+}
+
+.left {
+	float: left;
+	margin: 10px;
+}
+
+.right {
+	float: right;
+	margin: 10px;
+}
+
+.advert-box {
+	clear: both;
+	display: inline-block;
+	width: 45%;
+	height: 150px;
+	border: 1px solid black;
+	background: -moz-linear-gradient(53deg, rgba(153,218,255,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(153,218,255,1)), color-stop(100%, rgba(0,128,128,1))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(53deg, rgba(153,218,255,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(53deg, rgba(153,218,255,1) 0%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(53deg, rgba(153,218,255,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
+	background: linear-gradient(37deg, rgba(153,218,255,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', endColorstr='#99DAFF',GradientType=0 ); /* ie6-9 */
+}
+
+.newsletter {
+	width: 90%;
+	background: cyan;
+	margin: 20px 0;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.newsletter h3 {
+	font-size: 20px;
+	font-weight: bold;
+	color: blue;
+	margin: 20px 0 10px 0;
+	padding-top: 10px;
+}
+
+.newsletter p {
+	margin: 10px 0;
+	display: inline-block;
+}
+
+.subscribe-total {
+	display: inline-block;
+	margin: 10px 0;
+}
